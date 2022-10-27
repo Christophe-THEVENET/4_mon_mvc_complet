@@ -16,7 +16,7 @@ ob_start(); // mes en mémoire ds 1 variable tout ce qu il y a a la suite jusqu 
 <article style="display: flex; justify-content: space-around; align-items:center">
     <?php
     foreach ($movies as $movie) : ?>
-        <a href="?id=<?= $movie->getId() ?>"> // lien id dans l url
+        <a href="?id=<?= $movie->getId() ?>"> 
             <div>
                 <h2><?= $movie->getTitle() ?></h2>
                 <img src="img/<?= $movie->getImage() ?>" width="250" />
